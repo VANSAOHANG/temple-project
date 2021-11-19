@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+ 
+
+      
+    </style>
+  </head>
+
+  <body>
+        <input type="checkbox" name="" id="check">
+    <label for="check">
+        <i class="fas fa-bars"></i>
+    </label>
+    <nav>
+        <img src="logo.png" alt="">
+        <ul>
+            <li><a  class="active" href="#">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><i class="fa fa-angle-down"></i><a href="#">Temple</a>
+                
+                <div class="sub-menu-1">
+                    <ul>
+                        <li>
+                            <a href="">Angkor Wat</a>
+                        </li>
+                        <li>
+                            <a href="">Bayon</a>
+                        </li>
+                        <li>
+                            <a href="">Preah Vihear</a>
+                        </li>
+                        <li>
+                            <a href="">Angkor Wat</a>
+                        </li>
+                        <li>
+                            <a href="">Bayon</a>
+                        </li>
+                        <li class="hover-me">
+                            <a href="" >see more</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="">Adroid App</a></li>
+                                    <li><a href="">IOS App</a></li>
+                                    <li><a href="">Flutter App </a></li>
+                                    <li><a href="">Unity App </a></li>
+                                    <li><a href="">Unity App </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="pages/login.html">Login</a></li>
+        </ul>
+    </nav>
+    
+   <div class="banner">
+      <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="images/Angkor Wat/angkor1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="images/bayon/bayon1.jpg" alt="">
+        </div>
+       
+        <div class="swiper-slide"> 
+            <img src="images/kdei/kdei.jpg" alt="">
+        </div>
+        <div class="swiper-slide"> 
+            <img src="images/Neak pean/neakpean1.jpg" alt="">
+        </div>
+        <div class="swiper-slide"> 
+            <img src="images/Phnom bakheng/bakheng1.jpg" alt="">
+        </div>
+        <div class="swiper-slide"> 
+            <img src="images/Pre Rup/rup1.jpg" alt="">
+        </div>
+        <div class="swiper-slide"> 
+            <img src="images/Preah Khan/preah khan1.jpg" alt="">
+        </div>
+        <div class="swiper-slide"> 
+            <img src="images/Preah vihear/Preah-vihear1.jpg" alt="">
+        </div>
+        <div class="swiper-slide"> 
+            <img src="images/Taprom/taprom1.jpg" alt="">
+        </div>
+        <div class="swiper-slide"> 
+            <img src="images/បន្ទាយស្រី/srey1.jpg" alt="">
+        </div>
+        
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+   </div>
+  </body>
+</html>
