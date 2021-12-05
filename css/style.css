@@ -8,7 +8,11 @@ body {
     font-size: 18px;
     margin: 0;
     padding: 0;
-  }
+    color: rgb(46, 46, 46);
+}
+p{
+    line-height: 1.5rem;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -99,35 +103,6 @@ nav ul li:hover .sub-menu-1  ul li:last-child {
     padding-bottom: 10px;
 }
 
-
-
-@media (max-width:450px){
-    nav {
-        display: none;
-    }
-    nav img {
-        display: none;
-    }
-    label {
-        display: block;
-  
-    }
-    ul {
-        display: block;
-    }
-    #check:checked ~ nav{
-        display: block;
- 
-    }
-    nav ul li:hover .sub-menu-1  ul li {
-        width: 120px;  
-    }
-    nav ul li:hover .hover-me:hover .sub-menu-2 {
-        margin-left: -21px;
-        margin-top: 19px;
-    }
-   
-}
 .home {
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/Angkor-Wat/angkor1.jpg);
     
@@ -167,6 +142,7 @@ span {
 .home .btn-one, .about .btn-one {
     margin-top: 20px;
 }
+
 .banner {
     position: relative;
     z-index: -1;
@@ -224,14 +200,118 @@ span {
 .home-temple-text h1, .home-temple-text p, .home-temple-text .btn {
     margin-bottom: 30px;
 }
+.about-page .home-temple-text h1 {
+    color: black;
+    text-align: left;
+    margin-top: 0;
+}
 /* +===================about start========================== */
 
 .col-6 img {
     width: 100%;
     height: 100%;
+   
+}
+.about-page h1{
+    text-align: center;
+    margin: 90px 0 40px 0;
+    color: rgba(34, 187, 234, 1);
+}
+.about-page h2{
+    color: rgba(34, 187, 234, 1);
+}
+.about-page .vision .col-6 {
+    width: 44%;
+    padding: 20px;
+    border-radius: 5px;
+    background:#0000001a ;
+    /* background: rgb(112, 130, 136); */
 
 }
-/* +===================about start========================== */
+.about-page .vision .col-6:hover{
+    width: 46.3%;
+    /* border: 2px solid rgba(34, 187, 234, 1); */
+}
+.vision h2 {
+    margin-bottom: 10px;
+}
+.about-page .our-team {
+    width: 85%;
+    margin: auto;
+}
+.about-page .our-team .team {
+    padding: 20px;
+    width: 25%;
+    border-radius: 4px;
+    text-align: center;
+    background:#dddddd1a ;
+    box-shadow: #0000001a 0px 4px 12px;
+}
+.about-page .our-team .team:hover {
+    /* background: #000; */
+    width: 27%;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;}
+
+.team .ruler, .team p, .team .icon {
+    margin: 10px;
+}
+.icon .star {
+    color: #f09433;
+}
+.team h3 {
+    text-align: center;
+    color: rgba(34, 187, 234, 1);
+}
+.about-page .team .image {
+    height: 33%;
+    width: 43%;
+    padding: 15px;
+    margin: auto;
+}
+.customer-say .team .image{
+    height: 31%;
+}
+.about-page .team .image img{
+    width: 100%;
+    height: 98%;
+    border-radius: 50%;
+}
+.about-page .icon i {
+    font-size: 30px;
+}
+.ruler {
+
+    width: 90%;
+    margin: auto;
+    height:2px;
+    background: rgba(34, 187, 234, 1);
+}
+.value {
+    text-align: center;
+}
+.value i {
+    color: rgba(34, 187, 234, 1);
+}
+.value h3 {
+    margin: 25px 0;
+}
+.value p {
+    text-align: left;
+}
+.parther .image {
+    width: 12%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.parther .image img{
+    width: 100%;
+}
+.about-page .about div h1{
+    color: white;
+    text-align: left;
+}
+/* +===================end start========================== */
 
 /* ==========================footer start ================================ */
 .footer{
@@ -251,17 +331,20 @@ span {
     margin-bottom: 30px;
     color: #fff;
 }
-.footer .face  {
+.face  {
     color: #4d74c9 ;
 }
-.footer .twitter  {
+.twitter  {
     color: #00acee;
 }
-.footer .linkedin  {
+.linkedin  {
     color: #0e76a8;
 }
-.footer .youtube  {
+.youtube  {
     color: #c80101;
+}
+.instagram {
+    color: #f09433;
 }
 
 /* ==========================footer end ================================ */
@@ -343,7 +426,7 @@ span {
 
 /* =============================start row and col component+++++++++=========== */
 .container-flute{
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 .row {
@@ -352,8 +435,40 @@ span {
     flex-wrap: wrap;
 }
 .col-6 {
-    width: 49%;
+    width: 46%;
+}
+.col-4 {
+    width: 30%;
 }
 /* =============================end row and col component+++++++++=========== */
 
 /* ------------end component----------- */
+
+
+@media (max-width:450px){
+    nav {
+        display: none;
+    }
+    nav img {
+        display: none;
+    }
+    label {
+        display: block;
+  
+    }
+    ul {
+        display: block;
+    }
+    #check:checked ~ nav{
+        display: block;
+ 
+    }
+    nav ul li:hover .sub-menu-1  ul li {
+        width: 225px;  
+    }
+    nav ul li:hover .hover-me:hover .sub-menu-2 {
+        margin-left: -10px;
+        margin-top:-10;
+    }
+   
+}
